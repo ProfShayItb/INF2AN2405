@@ -4,9 +4,9 @@ export default function Modelo(props){
 
 
     return(
-       <div>
-            <div>{props.titulo}</div>
-            <div>{props.children}</div>
+       <div className='card'>
+            <div className='titulo'>{props.titulo}</div>
+            <div className='conteudo'>{props.children}</div>
        </div>
     )
 }
