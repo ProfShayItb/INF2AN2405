@@ -4,6 +4,7 @@ import ComParametro from "./components/basicos/ComParametro"
 import Fragmento from "./components/basicos/Fragmento"
 import NumeroAleatorio from "./components/basicos/NumeroAleatorio"
 import Modelo from "./components/modelo/modelo"
+import Repeticao from './components/data/Repeticao'
 
 function App() {
 
@@ -11,6 +12,9 @@ function App() {
 
     <div className="app">
       <div className="cards">
+        <Modelo titulo="Lista de dados" cor="green">
+          <Repeticao/>
+        </Modelo>
         <Modelo titulo="Valor aleatório" cor="orange">
           <NumeroAleatorio max={0} min={10}/>
           <NumeroAleatorio max={10} min={100}/>
