@@ -4,9 +4,10 @@
     overflow: hidden;
     border: 3px solid black;
     display: flex;
-    flex-direction:  column;
+    flex-direction:column;
     min-width: 200px;
-    overflow: hidden;
+    margin: 10px;
+    
 }
 
 .card .titulo{
