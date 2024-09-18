@@ -5,6 +5,7 @@ import Fragmento from "./components/basicos/Fragmento"
 import NumeroAleatorio from "./components/basicos/NumeroAleatorio"
 import Modelo from "./components/modelo/modelo"
 import Repeticao from './components/data/Repeticao'
+import ExHook from './components/basicos/ExHook'
 
 function App() {
 
@@ -12,6 +13,11 @@ function App() {
 
     <div className="app">
       <div className="cards">
+
+        <Modelo titulo = 'Usando useState' cor="yellow">
+          <ExHook/>
+        </Modelo>
+
         <Modelo titulo="Lista de dados" cor="green">
           <Repeticao/>
         </Modelo>
