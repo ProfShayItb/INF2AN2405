@@ -6,6 +6,7 @@ import NumeroAleatorio from "./components/basicos/NumeroAleatorio"
 import Modelo from "./components/modelo/modelo"
 import Repeticao from './components/data/Repeticao'
 import ExHook from './components/basicos/ExHook'
+import Formulario from './components/formulario/Formulario'
 
 function App() {
 
@@ -13,6 +14,10 @@ function App() {
 
     <div className="app">
       <div className="cards">
+
+        <Modelo titulo="Manipulando formulário" cor="#e678e4">
+          <Formulario/>
+        </Modelo>
 
         <Modelo titulo = 'Usando useState' cor="yellow">
           <ExHook/>
