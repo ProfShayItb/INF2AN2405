@@ -6,12 +6,21 @@ export default function Formulario(){
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
     const [idade, setIdade] = useState( )
+    const [user, setUser] = useState({})//{nome: 'Matheus', idade: '16', email: 'matheuso@gmail.com'}
 
 //()=>{}
+    function registrar(e){
+        e.preventDefault()
+        setUser({
+            nome: nome,
+            email: email,
+            idade: idade
+        })
+    }
 
     return(
         <div>
-            <form>
+            <form onSubmit={registrar}>
                 <h1>Cadastrando usuário</h1>
                 <label htmlFor="txtnome">Nome:</label>
                 <input type="text" placeholder="Digite seu nome" id="txtnome" value={nome} onChange={(e)=> setNome(e.target.value)}/><br/><br/>
@@ -26,9 +35,9 @@ export default function Formulario(){
             </form>
 
             <div>
-                <span>Bem vindo(a) {nome}</span>
-                <span>Email: </span>
-                <span>Idade: </span>
+                <span>Bem vindo(a) {user.nome}!</span><br/><br/>
+                <span>Email: {user.email} </span><br/><br/>
+                <span>Idade: {user.idade}</span><br/><br/>
             </div>
         </div>
     )
